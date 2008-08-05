@@ -17,7 +17,7 @@ var Struct = new function ()
 	};
 	m._EnArray = function (a, p, l, v)
 	{
-		for (var i = 0; i < l; a[p+i] = v[i], i++);
+		for (var i = 0; i < l; a[p+i] = v[i]?v[i]:0, i++);
 	};
 
 	// ASCII characters
